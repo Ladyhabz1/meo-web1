@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
+import os  
 
 # Initialize extensions
 db = SQLAlchemy()
@@ -14,6 +15,13 @@ def create_app():
     # Database configuration
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///charity.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    
+    # JWT Configuration - ADD THIS
+    app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY', 'your-secret-key-here')  # Important!
+    # log out user
+    app.config['JWT_COOKIE_SECURE'] = False
+    # For production, use a proper secret from environment variables
+    # app.config['JWT_SECRET_KEY'] = os.environ['JWT_SECRET_KEY']
 
     # Initialize db and migration with app
     db.init_app(app)
