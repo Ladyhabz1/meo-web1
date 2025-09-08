@@ -1,68 +1,91 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+/* Moyale Equality Organization Design System */
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    /* Core NGO Colors - Earth tones with vibrant accents */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+    
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    
+    /* Primary - Deep Forest Green (trust, growth, stability) */
+    --primary: 160 60% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 160 60% 20%;
+    
+    /* Secondary - Warm Orange (action, hope, energy) */
+    --secondary: 25 85% 55%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 25 85% 50%;
+    
+    /* Accent - Sage Green (calm, balance) */
+    --accent: 150 25% 45%;
+    --accent-foreground: 0 0% 98%;
+    
+    /* Supporting colors */
+    --muted: 160 15% 95%;
+    --muted-foreground: 215 15% 45%;
+    
+    /* Earth tone palette */
+    --earth-brown: 30 25% 35%;
+    --earth-sand: 45 30% 85%;
+    --nature-blue: 200 50% 40%;
+    
+    /* Interactive states */
+    --border: 160 20% 88%;
+    --input: 160 20% 88%;
+    --ring: 160 60% 25%;
+    
+    /* Destructive */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Layout */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(160 60% 25%), hsl(25 85% 55%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(160 15% 98%));
+    --gradient-cta: linear-gradient(135deg, hsl(25 85% 55%), hsl(25 85% 65%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 16px hsl(160 60% 25% / 0.08);
+    --shadow-card: 0 8px 32px hsl(160 60% 25% / 0.12);
+    --shadow-lifted: 0 12px 48px hsl(160 60% 25% / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  a:hover {
-    color: #747bff;
+  
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 0 0% 95%;
+    --card: 215 25% 10%;
+    --card-foreground: 0 0% 95%;
+    --primary: 160 50% 35%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 25 75% 50%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 215 25% 15%;
+    --muted-foreground: 0 0% 70%;
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+    --ring: 160 50% 35%;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
