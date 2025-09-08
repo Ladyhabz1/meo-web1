@@ -70,8 +70,7 @@ const About = () => {
             About Moyale Equality Organization
           </h1>
           <p className="text-xl text-white/90 leading-relaxed">
-            Building bridges across communities, creating equal opportunities for sustainable development, 
-            and fostering equality in the Moyale region and beyond since 2022.
+            Fostering equality in the Moyale region and beyond since 2022, building bridges across communities and creating equal opportunities for sustainable development
           </p>
         </div>
       </section>
@@ -99,7 +98,7 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                A thriving Moyale region where all communities have equal access to education, clean water, 
+                A thriving North Eastern region where all communities have equal access to education, clean water, 
                 economic opportunities, and where cultural diversity is celebrated as a source of strength.
               </p>
             </div>
@@ -111,7 +110,7 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Impact</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Since 2016, we've impacted over 2,500 lives through 15 active programs, built lasting 
+                Since 2022, we've impacted over 2,500 lives through 15 active programs, built lasting 
                 partnerships with 50+ community organizations, and created sustainable change.
               </p>
             </div>
@@ -143,7 +142,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-foreground mb-6">Meet Our Team</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Our dedicated team brings together diverse expertise and deep community knowledge 
-              to drive meaningful change in the Moyale region.
+              to drive meaningful change in the Moyale aand north eastern region at large.
             </p>
           </div>
 
@@ -186,9 +185,8 @@ const About = () => {
               <div className="md:w-2/3">
                 <h3 className="text-xl font-semibold text-foreground mb-3">Foundation</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Moyale Equality Organization was founded by a group of passionate community leaders 
-                  who recognized the need for cross-border collaboration to address shared challenges 
-                  in education, water access, and economic development.
+                  Moyale Equality Organization was founded by Habiba Hassan, who is passionate about empowering girls to pursue education and achieve success in any field of their choice, because passion, not gender, defines opportunity. 
+                  She also recognized the importance of cross-border collaboration to tackle shared challenges in education, water access, and economic development.
                 </p>
               </div>
             </div>
@@ -196,14 +194,14 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3">
                 <div className="w-24 h-24 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground text-2xl font-bold">
-                  2018
+                  2023
                 </div>
               </div>
               <div className="md:w-2/3">
                 <h3 className="text-xl font-semibold text-foreground mb-3">First Programs</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Launched our first education support program, providing school supplies and 
-                  scholarships to 100 children. Also initiated the clean water project that 
+                  scholarships to 30 students. Also initiated the clean water project that 
                   has since provided access to clean water for over 1,000 people.
                 </p>
               </div>
