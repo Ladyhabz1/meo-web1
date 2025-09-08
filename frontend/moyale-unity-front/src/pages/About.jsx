@@ -179,7 +179,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3">
                 <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-2xl font-bold">
-                  2016
+                  2012
                 </div>
               </div>
               <div className="md:w-2/3">
