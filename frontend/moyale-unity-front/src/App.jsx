@@ -12,12 +12,15 @@ import DonationForm from './pages/DonationForm'
 import VolunteerForm from './pages/VolunteerForm'
 import Admin from './pages/Admin'
 import PrivateRoute from './routes/PrivateRoute'
+// import "../index.css"
 
 function App() {
   return (
+    
     <AuthProvider>
       <Router>
         <div className="min-h-screen flex flex-col bg-background text-foreground">
+
           <Navbar />
           <main className="flex-grow">
             <Routes>
