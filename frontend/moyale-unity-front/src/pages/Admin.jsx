@@ -7,23 +7,23 @@ const Admin = () => {
   const [activeTab, setActiveTab] = useState('dashboard')
 
   const stats = {
-    totalDonations: 45650,
-    activeDonors: 234,
+    totalDonations: 50,
+    activeDonors: 25,
     volunteers: 67,
     programs: 15,
     beneficiaries: 2500
   }
 
   const recentDonations = [
-    { id: 1, donor: 'John Smith', amount: 250, program: 'Education Support', date: '2024-01-15' },
-    { id: 2, donor: 'Sarah Johnson', amount: 500, program: 'Clean Water Initiative', date: '2024-01-14' },
+    { id: 1, donor: 'Yedo Galle', amount: 250, program: 'Education Support', date: '2024-01-15' },
+    { id: 2, donor: 'Sarah Boke', amount: 500, program: 'Clean Water Initiative', date: '2024-01-14' },
     { id: 3, donor: 'Anonymous', amount: 100, program: 'Women Empowerment', date: '2024-01-13' },
-    { id: 4, donor: 'Mike Wilson', amount: 750, program: 'General Fund', date: '2024-01-12' },
+    { id: 4, donor: 'Anonymous ', amount: 750, program: 'General Fund', date: '2024-01-12' },
   ]
 
   const recentVolunteers = [
-    { id: 1, name: 'Alice Brown', skills: 'Teaching, Community Outreach', status: 'Pending Review', date: '2024-01-16' },
-    { id: 2, name: 'David Lee', skills: 'Water Systems, Engineering', status: 'Approved', date: '2024-01-15' },
+    { id: 1, name: 'Yedo Galle', skills: 'Teaching, Community Outreach', status: 'Approved', date: '2024-01-16' },
+    { id: 2, name: 'David Lee', skills: 'Water Systems, Engineering', status: 'Pending Review ', date: '2024-01-15' },
     { id: 3, name: 'Emma Davis', skills: 'Healthcare, Nursing', status: 'Interview Scheduled', date: '2024-01-14' },
   ]
 
@@ -81,7 +81,7 @@ const Admin = () => {
                         <div className="text-sm text-muted-foreground">{donation.program}</div>
                       </div>
                       <div className="text-right">
-                        <div className="font-semibold text-secondary">${donation.amount}</div>
+                        <div className="font-semibold text-secondary">ksh{donation.amount}</div>
                         <div className="text-sm text-muted-foreground">{donation.date}</div>
                       </div>
                     </div>

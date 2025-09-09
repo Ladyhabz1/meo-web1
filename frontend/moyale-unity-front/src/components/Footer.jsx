@@ -99,8 +99,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-2 text-sm opacity-80">
               <p>📍 Moyale Town, Kenya-Ethiopia Border</p>
-              <p>📞 +254 700 123 456</p>
-              <p>✉️ info@moyaleequality.org</p>
+              <p>📞 +254 747 825 645</p>
+              <p>✉️ moyaleequalityorganisation@gmail.com</p>
               <p>🕒 Mon - Fri: 8:00 AM - 5:00 PM</p>
             </div>
           </div>

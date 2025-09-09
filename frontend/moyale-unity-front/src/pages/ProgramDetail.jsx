@@ -200,19 +200,19 @@ const ProgramDetail = () => {
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Raised:</span>
                   <span className="font-semibold text-secondary">
-                    ${program.currentFunding.toLocaleString()}
+                    ksh{program.currentFunding.toLocaleString()}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Goal:</span>
                   <span className="font-semibold text-foreground">
-                    ${program.fundingGoal.toLocaleString()}
+                    ksh{program.fundingGoal.toLocaleString()}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Remaining:</span>
                   <span className="font-semibold text-primary">
-                    ${(program.fundingGoal - program.currentFunding).toLocaleString()}
+                    ksh{(program.fundingGoal - program.currentFunding).toLocaleString()}
                   </span>
                 </div>
               </div>

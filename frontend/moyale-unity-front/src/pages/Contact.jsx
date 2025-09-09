@@ -55,17 +55,17 @@ const Contact = () => {
     {
       icon: '📍',
       title: 'Address',
-      details: ['Moyale Town', 'Kenya-Ethiopia Border', 'P.O. Box 123 Moyale']
+      details: ['Moyale Town', 'Kenya-Ethiopia Border', 'P.O. Box 7860-00610 Moyale']
     },
     {
       icon: '📞',
       title: 'Phone',
-      details: ['+254 700 123 456', '+251 911 234 567']
+      details: ['+254 113 825 645', '+254 747 825 645                                                                                                                                                                    ..................']
     },
     {
       icon: '✉️',
       title: 'Email',
-      details: ['info@moyaleequality.org', 'programs@moyaleequality.org']
+      details: ['moyaleequalityorganisation@gmail.com', 'habibahassanguyo10@gmail.com']
     },
     {
       icon: '🕒',

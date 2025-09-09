@@ -4,7 +4,7 @@ import heroImage from '../assets/hero-image.jpg'
 
 const Home = () => {
   const stats = [
-    { number: '2,500+', label: 'Lives Impacted' },
+    { number: '1,000+', label: 'Lives Impacted' },
     { number: '15', label: 'Active Programs' },
     { number: '8', label: 'Years of Service' },
     { number: '50+', label: 'Community Partners' },

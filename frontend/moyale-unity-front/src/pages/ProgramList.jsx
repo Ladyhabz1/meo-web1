@@ -150,7 +150,7 @@ const ProgramList = () => {
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-secondary">
-                      ${program.currentFunding.toLocaleString()}
+                      ksh{program.currentFunding.toLocaleString()}
                     </div>
                     <div className="text-xs text-muted-foreground">Raised</div>
                   </div>
@@ -173,7 +173,7 @@ const ProgramList = () => {
                     ></div>
                   </div>
                   <div className="text-xs text-muted-foreground mt-1">
-                    Goal: ${program.fundingGoal.toLocaleString()}
+                    Goal: ksh{program.fundingGoal.toLocaleString()}
                   </div>
                 </div>
 

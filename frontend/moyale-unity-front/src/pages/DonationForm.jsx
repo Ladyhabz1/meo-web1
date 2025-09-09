@@ -91,7 +91,7 @@ const DonationForm = () => {
               Thank You for Your Donation!
             </h2>
             <p className="text-muted-foreground mb-6">
-              Your generous contribution will make a real difference in the lives of people 
+              Your generous contribution will make a real difference in the lives of girls 
               in the Moyale region. We'll send you a confirmation email shortly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -143,7 +143,7 @@ const DonationForm = () => {
           </h1>
           <p className="text-xl text-white/90 leading-relaxed">
             Your contribution helps us create lasting change in the Moyale region. 
-            Every dollar makes a difference in someone's life.
+            Every shilling makes a difference in someone's life.
           </p>
         </div>
       </section>
@@ -172,7 +172,7 @@ const DonationForm = () => {
                       : 'bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground'
                   }`}
                 >
-                  ${amount}
+                  ksh{amount}
                 </button>
               ))}
             </div>
