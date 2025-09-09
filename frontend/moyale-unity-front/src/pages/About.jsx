@@ -98,7 +98,7 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                A thriving North Eastern region where all communities have equal access to education, clean water, 
+                A thriving North Eastern region where everyone has equal access to education, clean water, 
                 economic opportunities, and where cultural diversity is celebrated as a source of strength.
               </p>
             </div>
@@ -142,7 +142,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-foreground mb-6">Meet Our Team</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Our dedicated team brings together diverse expertise and deep community knowledge 
-              to drive meaningful change in the Moyale aand north eastern region at large.
+              to drive meaningful change in the Moyale, north eastern region of Kenya and beyond.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3">
                 <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-2xl font-bold">
-                  2012
+                  2022
                 </div>
               </div>
               <div className="md:w-2/3">
