@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
+from flask_cors import CORS
 import os  
 
 # Initialize extensions
@@ -16,14 +17,14 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///charity.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
-    # JWT Configuration - ADD THIS
-    app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY', 'your-secret-key-here')  # Important!
-    # log out user
-    app.config['JWT_COOKIE_SECURE'] = False
-    # For production, use a proper secret from environment variables
-    # app.config['JWT_SECRET_KEY'] = os.environ['JWT_SECRET_KEY']
+    # JWT Configuration
+    app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY', 'your-secret-key-here')
+    app.config['JWT_COOKIE_SECURE'] = False  # For local dev only, set True in production
 
-    # Initialize db and migration with app
+    # Enable CORS (allow frontend to communicate with backend)
+    CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})  
+    
+    # Initialize db, jwt, migrate
     db.init_app(app)
     jwt.init_app(app) 
     migrate.init_app(app, db)
