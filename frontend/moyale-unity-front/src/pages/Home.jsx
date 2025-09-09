@@ -6,7 +6,7 @@ const Home = () => {
   const stats = [
     { number: '1,000+', label: 'Lives Impacted' },
     { number: '15', label: 'Active Programs' },
-    { number: '8', label: 'Years of Service' },
+    { number: '3', label: 'Years of Service' },
     { number: '50+', label: 'Community Partners' },
   ]
 

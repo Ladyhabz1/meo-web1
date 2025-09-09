@@ -24,12 +24,12 @@ const apiCall = async (endpoint, options = {}) => {
 
 // Get all programs
 export const getPrograms = async () => {
-  return apiCall('/api/programs')
+  return apiCall('/programs')
 }
 
 // Get single program by ID
 export const getProgram = async (id) => {
-  return apiCall(`/api/programs/${id}`)
+  return apiCall(`/programs/${id}`)
 }
 
 // Mock data fallback for development

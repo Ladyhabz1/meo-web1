@@ -3,7 +3,7 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL || ''
 // Submit donation form
 export const submitDonation = async (donationData) => {
   try {
-    const response = await fetch(`${API_BASE}/api/donate`, {
+    const response = await fetch(`${API_BASE}/donate`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export const submitDonation = async (donationData) => {
 // Submit volunteer form
 export const submitVolunteer = async (volunteerData) => {
   try {
-    const response = await fetch(`${API_BASE}/api/volunteer`, {
+    const response = await fetch(`${API_BASE}/volunteer`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ export const submitVolunteer = async (volunteerData) => {
 // Submit contact form
 export const submitContact = async (contactData) => {
   try {
-    const response = await fetch(`${API_BASE}/api/contact`, {
+    const response = await fetch(`${API_BASE}/contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
