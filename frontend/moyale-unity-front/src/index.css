@@ -80,11 +80,21 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+/* Define custom utilities so Tailwind understands them */
+@layer utilities {
+  .border-border {
+    border-color: hsl(var(--border));
   }
+  .bg-background {
+    background-color: hsl(var(--background));
+  }
+  .text-foreground {
+    color: hsl(var(--foreground));
+  }
+}
 
+/* Apply defaults */
+@layer base {
   body {
     @apply bg-background text-foreground;
   }
