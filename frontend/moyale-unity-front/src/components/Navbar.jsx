@@ -29,8 +29,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-smooth">
-              <span className="text-white font-bold text-lg">ME</span>
+            <div className="w-10 h-10 flex items-center justify-center transform group-hover:scale-105 transition-smooth">
+              <img
+                src="/favicon.ico"
+                alt="Moyale Equality Logo"
+                className="h-8 w-8"
+              />
             </div>
             <div className="hidden sm:block">
               <div className="text-lg font-bold text-foreground">Moyale Equality</div>
