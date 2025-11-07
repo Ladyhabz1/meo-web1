@@ -27,14 +27,26 @@ class Program(db.Model):
 
 class Donation(db.Model):
     __tablename__ = "donations"
-
     id = db.Column(db.Integer, primary_key=True)
     donor_name = db.Column(db.String(120), nullable=False)
-    phone_number = db.Column(db.String(20), nullable=False)  # for Mpesa
+    phone_number = db.Column(db.String(20), nullable=False)
     amount = db.Column(db.Float, nullable=False)
-    status = db.Column(db.String(20), default="pending")  # pending, success, failed
-    transaction_id = db.Column(db.String(120), nullable=True)  # Mpesa receipt code
+    status = db.Column(db.String(20), default="pending")
+    transaction_id = db.Column(db.String(120), nullable=True)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    program_id = db.Column(db.Integer, db.ForeignKey('programs.id'), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=True)
+
+    program = db.relationship('Program', backref=db.backref('donations', lazy=True))
+    user = db.relationship('User', backref=db.backref('donations', lazy=True))
+
+    #validation method
+    def validate_phone_number(self):
+        """Basic phone validation: only digits and optional + at start."""
+        import re
+        pattern = r'^\+?\d{7,15}$'  # Kenyan & international format
+        return bool(re.match(pattern, self.phone_number))
 
 
 class Volunteer(db.Model):
